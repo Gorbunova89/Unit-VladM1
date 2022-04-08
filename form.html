@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+
+    <style>
+    .card {
+        background-color: #9b176d;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        color: blue;
+        background-color: cadetblue;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        color: #499300;
+        background-color: #292929;
+        padding: 10px;
+        margin-bottom: 10 px;
+    }
+
+    .color {
+        color: #ebebeb;
+    }
+
+    .place {
+        color: #8d67f3;
+        background-color: #292929;
+        font-size: large;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Формы</h1>
+    <br>
+    <h2>Форма 1</h2>
+    <br>
+    
+    <form>
+        <div>
+            <label for="text">Текст</label>
+            <input type="text" id="text">
+        </div> 
+
+        <div>
+            <label for="text">Текст</label>
+            <input type="text" id="text" value="Напишите что-нибудь">
+        </div> 
+
+        <div>
+            <label for="text">Текст</label>
+            <input type="text" id="text" placeholder="Напишите что-нибудь">
+        </div> 
+           
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Введите ваш емеил">
+        </div>
+
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" placeholder="Введите ваш пароль">
+        </div>
+
+        <div>
+            <label for="number">Число</label>
+            <input type="number" id="number" min="0">
+        </div>
+
+        <div>
+            <label for="range">Число</label>
+            <input type="range" id="range" min="0" max="10" step="1">
+        </div>
+
+        <div>
+            <label for="date">Дата</label>
+            <input type="date" id="date">
+        </div>
+
+        <div>
+            <label for="color">Цвет</label>
+            <input type="color" id="color">
+        </div>
+
+        <div>
+            <label for="message">Сообщение</label>
+            <br>
+            <textarea id="message" cols="15" rows="10">
+            </textarea>
+        </div>
+
+        <div>
+            <label for="sex">Ваш пол</label>
+            <select id="sex">
+                <option value="male">Мужчина</option>
+                <option Value="female">Женщина</option>
+                <option Value="other">Другое</option>
+            </select>
+        </div>
+        
+        <div>
+            <label>Количество работ</label>
+            <input type="radio" name="work"> 1
+            <input type="radio" name="work"> 2
+            <input type="radio" name="work"> 3
+            <input type="radio" name="work"> 4
+            <input type="radio" name="work"> 5
+        </div>
+
+        <div>
+            <label>Где хотите побывать?</label>
+            <input type="checkbox" name="place"> Большой Тхач
+            <input type="checkbox" name="place"> Лаго-Наки
+            <input type="checkbox" name="place"> Приэльбрусье
+            <input type="checkbox" name="place"> Архыз
+            <input type="checkbox" name="place"> Домбай
+        </div>
+
+        <input type="submit" value="Отправить форму">
+            <br>
+        <button type="submit">Отправить форму</button>
+
+        <div>
+         <fieldset><legend><b>Выберите файл(-ы)</b></legend>  
+        <input type="file" multiple="multiple" id="files"></fieldset> 
+        </div>
+    </form>
+
+    <div>
+        <audio src="audio/Eivør - Mín móðir.mp3" controls ></audio>
+    </div>
+
+    <div>
+        <audio controls>
+            <source src="audio/Shanti People - Asato.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div>
+        <video src="video/VID_20210418_191244.mp4" controls width="200px"></video>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+        <a href="#" style="border: 2px solid red;">This is link</a>
+        <a href="#" style="border: 2px solid red;">This is link</a>
+
+    <div>
+        <a href="#" style="border: 2px solid red;">This is link</a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div id="navigation" class="place">
+        <h2>Расписание</h2>
+    </div>
+
+    <div id="navigation" class="nav">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 1</a></li>
+        </ul>
+    </div>
+
+    <div id="block1" class="card">
+        <h3>Большой Тхач</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <div class="color">Impedit vel repellendus ullam cupiditate enim mollitia iusto</div>, 
+        quidem, maxime est possimus commodi repellat quos, placeat eum 
+        quas similique. Modi, molestiae praesentium!</p>
+    </div>
+
+    <div id="block2" class="card">
+        <h3>Лаго-Наки</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <span class="color">Impedit vel repellendus ullam cupiditate enim mollitia iusto</span>, 
+        quidem, maxime est possimus commodi repellat quos, placeat eum 
+        quas similique. Modi, molestiae praesentium!</p>
+    </div>
+
+    <div id="footer" class="footer">
+        <ul>
+            <li>Instagram</li>
+            <li>Telegram</li>
+            <li>YouTube</li>
+        </ul>
+    </div>
+
+</body>
+</html>
